@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container m-auto bg-gray-300">
+      <h1 class="text-red-500 text-2xl text-center">
+        Bài Tập Javascript Buổi 5
+      </h1>
+      <div id="bai1">
+        <h3 class="text-xl">Bài Tập 1: Quản Lý Tuyển Sinh</h3>
+        <form class="grid grid-cols-3 gap-4 mt-2">
+          <div>
+            <input type="number" id="diemChuan" placeholder="Điểm chuẩn" />
+          </div>
+          <div>
+            <select name="" id="khuVuc">
+              <option value="0">Chọn khu vực</option>
+              <option value="2">A</option>
+              <option value="1">B</option>
+              <option value="0.5">C</option>
+            </select>
+          </div>
+          <div>
+            <select name="" id="doiTuong">
+              <option value="0">Chọn đối tượng</option>
+              <option value="2.5">1</option>
+              <option value="1.5">2</option>
+              <option value="1">3</option>
+            </select>
+          </div>
+          <div>
+            <input
+              type="number"
+              id="inputScore1"
+              placeholder="Điểm môn thứ 1"
+            />
+          </div>
+          <div>
+            <input
+              type="number"
+              id="inputScore2"
+              placeholder="Điểm môn thứ 2"
+            />
+          </div>
+          <div>
+            <input
+              type="number"
+              id="inputScore3"
+              placeholder="Điểm môn thứ 3"
+            />
+          </div>
+
+          <div>
+            <button
+              type="button"
+              id="btnBT1"
+              class="bg-blue-500 text-2xl rounded-full"
+            >
+              Kết Quả
+            </button>
+          </div>
+          <div>👉<span id="txtResultBT1"></span></div>
+        </form>
+      </div>
+      <div id="bai2">
+        <h3 class="text-xl">Bài Tập 2: Tính tiền điện</h3>
+        <form class="grid grid-cols-2 gap-4 mt-2">
+          <div>
+            <input type="text" id="inputName" placeholder="Nhập họ tên" />
+          </div>
+          <div>
+            <input type="number" id="inputKW" placeholder="Nhập số kw" />
+          </div>
+
+          <div>
+            <button
+              type="button"
+              id="btnBT2"
+              class="bg-blue-500 rounded-full text-2xl"
+            >
+              Tính tiền điện
+            </button>
+          </div>
+          <div>👉<span id="txtResultBT2"></span></div>
+        </form>
+      </div>
+      <div id="bai3">
+        <h3 class="text-xl">Bài Tập 3: Tính Thuế Thu Thập Cá Nhân</h3>
+        <form class="grid grid-cols-3 gap-4 mt-2">
+          <div>
+            <input type="text" id="inputName2" placeholder="Nhập họ tên" />
+          </div>
+          <div>
+            <input
+              type="number"
+              id="inputSalary"
+              placeholder="Tổng thu nhập năm"
+            />
+          </div>
+          <div>
+            <input
+              type="number"
+              id="inputUser"
+              placeholder="Số người phụ thuộc"
+            />
+          </div>
+          <div>
+            <button
+              class="bg-blue-500 text-2xl rounded-full"
+              type="button"
+              id="btnBT3"
+            >
+              Tính tiền thuế
+            </button>
+          </div>
+          <div>👉<span id="txtResultBT3"></span></div>
+        </form>
+      </div>
+      <div id="bai4">
+        <h3 class="text-xl">Bài Tập 4: Tính Tiền Cáp</h3>
+        <form class="grid grid-cols-3 gap-4 mt-2">
+          <div>
+            <select name="" id="Customer" onchange="disableInput()">
+              <option value="">Chọn loại khách hàng</option>
+              <option value="user">Nhà Dân</option>
+              <option value="company">Doanh Nghiệp</option>
+            </select>
+          </div>
+          <div>
+            <input type="text" id="inputID" placeholder="Nhập mã khách hàng" />
+          </div>
+          <div>
+            <input
+              type="number"
+              id="inputChanel"
+              placeholder="Số kênh cao cấp"
+            />
+          </div>
+          <div>
+            <input
+              type="number"
+              style="display: none"
+              id="inputConnect"
+              placeholder="Số kết nối"
+            />
+          </div>
+          <div>
+            <button
+              class="bg-blue-500 text-xl rounded-full"
+              type="button"
+              id="btnBT4"
+            >
+              Tính tiền cáp
+            </button>
+          </div>
+          <div>👉<span id="txtResultBT4"></span></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Nhúng Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Nhung1 file JS -->
+    <script src="./main.js"></script>
+  </body>
+</html>
